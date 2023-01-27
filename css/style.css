@@ -1,0 +1,450 @@
+ @import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Homenaje&family=Sevillana&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;1,100&display=swap');
+ :root{
+    --links-white-color:white;
+    --black-backgroundColor: #171c28;
+    --dark-background-card:#171c28;
+    --white-text-color:white;
+    --dark-text-color:black;
+   --font-family-paragragh: 'Chivo Mono', monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  transition: 1s ease-in-out;
+}
+p{
+  font-family: var(--font-family-paragragh);
+}
+body.dark{
+    background-color: var(--black-backgroundColor);
+    color: var(--links-white-color);
+
+}
+html{
+    scroll-behavior: smooth; 
+}
+
+
+section  {
+    margin-bottom: 120px;
+    min-height: 100vh;
+} 
+
+.sectionHeader {
+    margin: auto;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Rubik Vinyl', cursive;
+    letter-spacing: 8px;
+    word-spacing: 15px;
+    border-bottom: 2px solid;
+    width: fit-content;
+    transition: .5s ease-in-out;
+    height: 80px;
+}
+.sectionHeader:hover{
+    border-bottom:1px solid #26a69a;
+}
+
+
+/* start generals */
+.social-link {
+  border-radius: 50%;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    animation: socialAnimation 2s infinite;
+}
+.social-link a{
+  padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ border-radius: 50%;
+
+}
+@keyframes socialAnimation {
+  0%,100%{transform:translatex(0px)}
+  25%{transform:translatex(-5px)}
+  50%{transform:translatex(5px)}
+  75%{transform:translatex(-5px)}
+}
+.social-link:hover{
+  animation: none;
+}
+  .gmail{
+    background-color: #ea4335
+  }
+  .linkedin{
+    background-color: #0e76a8
+  }
+  .github{
+    background-color: #333
+  }
+  .social-link a:hover{
+    background-color: #000
+  }
+/* end general */
+
+/* start header */
+.headercontent {
+  min-height: 50px;
+}
+.logo {
+  font-family: "Sevillana", cursive;
+  letter-spacing: 2px;
+}
+.nav--links {
+  font-family: 'Tangerine', serif;
+}
+.nav--links a i {
+  text-shadow: 0px 0px 12px #26a69a;
+}
+
+.nav--links a {
+  font-size: 22px;
+  padding: 5px;
+  border-radius: 13px;
+  transition: .3s;
+}
+.nav--links a:hover{
+  box-shadow: 3px 2px 5px;
+}
+.nav--links a span{
+  opacity: .6;
+}
+.nav--links a span:hover{
+  opacity: 1;
+}
+.active--link{
+  background-color: #6a1b9a;
+}
+/* end header */
+/*start landing page  */
+.left {
+transform: translatex(-100%);
+animation: translateRight 1s ease-out alternate forwards;
+}
+ .right {
+  transform: translatex(100%);
+  animation: translateLeft 2s ease alternate forwards;
+}
+@keyframes translateRight{
+  0%{transform:translatex(-100%)}
+  25%{transform:translatex(-75%)}
+  50%{transform:translatex(-50%)}
+  75%{transform:translatex(-25%)}
+  100%{transform:translatex(0)}
+}
+@keyframes translateLeft{
+  0%{transform:translatex(100%)}
+  25%{transform:translatex(75%)}
+  50%{transform:translatex(50%)}
+  75%{transform:translatex(25%)}
+  100%{transform:translatex(0)}
+}
+.buttons button {
+  background-color: #6a1b9ab3;
+  border: none;
+  border-radius: 5px;
+  color: var(--white-text-color);
+  min-width: 150px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.buttons button:hover {
+  background-color: #ccc;
+  color:  #6a1b9ab3;
+}
+/* end landing page  */
+
+
+/* start what i do  */
+.whatIDo {
+    margin-top: 30px;
+    font-family: 'Homenaje', sans-serif;
+
+}
+.whatIDoContent {
+    text-align: center;
+}
+@media screen and (min-width:1024px) {
+  .whatIDoContent{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .whatIDoContent .rightColum{
+flex: 1;
+  }
+  .whatIDoContent .leftColum{
+    flex: 1;
+  }
+
+}
+/* end what i do  */
+
+
+/* start proficiency */
+.proficiency {
+    margin-top: 30px;
+}
+.sectionHeader{
+    text-align: center;
+    font-size: 40px;
+
+}
+.proficiencyContent{
+}
+@media screen and (min-width:1024px) {
+    .proficiencyContent{
+      display: flex;
+      justify-content: space-between;
+    }
+    .whatIDoContent .right{
+  flex: 1;
+    }
+    .whatIDoContent .left{
+      flex: 1;
+    }
+  
+  }
+/* end proficiency */
+
+/* start education */
+.education{
+
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.educationContent {
+
+}
+.education .bottomBorder {
+    height: 2px;
+    background-color: #ccc;
+    display: block;
+    transition: .5s;
+    width: 80%;
+}
+.education:hover .bottomBorder{
+    background-color: darkblue;
+width: 100%;
+}
+@media screen and (min-width:1024px) {
+    .educationContent {
+        display: flex;
+        text-align: left;
+        column-gap: 30px;
+    }
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* end education */
+
+/* start experience  */
+.experience{
+
+}
+.experienceContent{
+
+}
+.ecperienceCard{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+/* for white mode */
+.experienceCarWhite{
+background-color: #171c28;
+box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+border: 1px solid hsla(0,0%,82.7%,.397);
+}
+/* for dark mode  */
+.experienceCardDark{
+    background-color: #171c28;
+    box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+    border: 1px solid hsla(0,0%,82.7%,.397);
+}
+
+ .cardHeader{
+   height: 250px;
+   padding: 20px;
+   position: relative;
+   margin-bottom: 50px;
+}
+/* background of card one */
+.experienceOne .cardHeader{
+   background-color:rgb(140, 68, 140) ;
+}
+.experienceTwo .cardHeader{
+    background-color: rgb(68, 165, 219);
+}
+.experienceThree .cardHeader{
+    background-color: rgb(156, 203, 62);
+}
+.cardHeader .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.2));
+    border-radius: 10px 10px 0 0;
+}
+.cardHeader .companyName{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+}
+ .cardHeader .logo{
+    position: absolute;
+    transform: translate(-50%,-30%);
+    top: 100%;
+    left: 50%;
+    border-radius: 50%;
+}
+ .cardHeader .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+ .cardHeader a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.cardDetails{
+    text-align: center;
+    padding: 20px;
+    line-height: 1;
+}
+.positionTitle{
+    font-family: 'Rubik Vinyl', cursive;
+    margin: 20px 0;
+    font-size: 1.75rem;
+
+}
+.date {
+font-size: 1.25rem;
+margin-bottom: 1.5rem;
+} 
+.positionDescription{
+    font-size: 1.3rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+.positionDescriptionDetails {
+    list-style: circle;
+    flex-direction: column;
+    line-height: 1.5;
+    gap: 15px;
+}
+.experienceContent{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    
+}
+@media screen and (min-width:1024px) {
+    .experienceContent{
+        display: grid;
+    }
+    
+}
+/* up button */
+.up {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #26a69a;
+    color: white;
+    font-size: 30px;
+    border: none;
+    transition: .5s ease-in-out;
+}
+/* end experience */
+/* start contact me */
+.contactMe{
+    text-align: center;
+}
+.contactMeDetails{
+
+}
+.contactMe .phone ,
+.contactMe .email {
+margin-top: 30px;
+}
+.contactMe .social--links{
+    margin-top: 30px;
+}
+@media screen and (min-width:1024px) {
+    .contactMe{
+        margin-bottom: 20px;
+    }
+}
+/* start contact me */
+/* start loading  */
+.loading-logo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+.load hr{
+  border:0;
+  width:40%;
+  height:40%;
+  position:absolute;
+  border-radius:50%;
+  animation:spin 2s ease infinite
+}
+
+.load :first-child{background:#19A68C;
+  animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;
+  animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;
+  animation-delay:-0.5s}
+.load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+/* end loading  */
+
+.websiteContent{
+  display: none;
+}
