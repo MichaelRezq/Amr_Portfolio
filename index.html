@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     />
+
     <!-- fontawesm  -->
     <link
       rel="stylesheet"
@@ -32,444 +33,585 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="dark">
-    <!-- ====================== HEADER ============================ -->
-
-    <header class="my-3">
-      <div class="container">
-        <div
-          class="headercontent d-flex justify-content-between align-items-center border-bottom"
-        >
-          <div class="logo">&lt; AMR YADEM &gt;</div>
-          <ul class="nav justify-content-end d-none d-md-flex">
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#skills">Skill</a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#education">Education</a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-          <!-- nav bar in small or less -->
-          <ul
-            style="top: 90%"
-            class="nav d-md-none z-3 position-fixed start-50 translate-middle"
+    <!-- loading animation -->
+    <div class="row justify-content-center align-items-center loading">
+      <div class="col-md-6">
+        <lottie-player
+          src="./lottoie_files/110304-popeye.json"
+          background="transparent"
+          speed="2"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="logo text-center fs-1">
+          <a href="./index.html" class="text-decoration-none">
+            &lt; AMR YADEM &gt;</a
           >
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#"
-                ><i class="fa-solid fa-house"></i
-              ></a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#skills"
-                ><i class="fa-brands fa-think-peaks"></i
-              ></a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#experience"
-                ><i class="fa-solid fa-user-secret"></i
-              ></a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#achievment"
-                ><i class="fa-brands fa-ideal"></i
-              ></a>
-            </li>
-            <li class="nav-item nav--links">
-              <a class="nav-link text-light" href="#contacts"
-                ><i class="fa-solid fa-address-card"></i
-              ></a>
-            </li>
-          </ul>
-          <div class="mode">
-            <i
-              class="fa-solid fa-moon swapIcon"
-              onclick="hanleDarkAndWhite()"
-            ></i>
-          </div>
         </div>
       </div>
-    </header>
-    <!-- ====================== landing page ============================ -->
-    <section class="landingPage">
-      <div class="container">
-        <div class="row">
-          <article class="left col-lg-6 col-md-6 col-xs-12">
-            <h1>Hi all, I'm Amr</h1>
-            <p class="my-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              perspiciatis veritatis illo impedit et debitis, eum id,
-              accusantium ratione, qui eos nemo ducimus expedita! Atque ullam
-              amet assumenda unde ea?
-            </p>
-            <ul
-              class="sociallinks list-unstyled d-flex gap-3 justify-content-center mt-5"
-            >
-              <li class="social-link">
-                <a href="#" class="github"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </li>
-              <li class="social-link">
-                <a href="#" class="gmail"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-              <li class="social-link">
-                <a href="#" class="linkedin"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-            <div class="buttons d-flex flex-wrap gap-3 mt-5">
-              <a href="#"
-                ><button type="button" class="btn btn-outline-primary">
-                  CONTACT ME
-                </button>
-              </a>
-              <a href="#"
-                ><button type="button" class="btn btn-outline-primary">
-                  SEE MY RESUME
-                </button>
-              </a>
-            </div>
-          </article>
-          <article class="left col-lg-6 col-md-6 col-xs-12">
-            <lottie-player
-              src="./lottoie_files/4_5908853806396869959.json"
-              background="transparent"
-              speed="1"
-              style="width: 300px; height: 300px"
-              loop
-              autoplay
-            ></lottie-player>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- ====================== what i do   ============================ -->
-    <section class="Whatido" id="skill">
-      <div class="container">
-        <h2 class="sectionHeader">What I do</h2>
-        <div class="row">
-          <!-- lotti file -->
-          <div class="col-md-6 col-12 left"></div>
-          <!-- right corner -->
-          <div class="col-md-6 col-12 right">
-            <p>
-              I SCRATCH AND MAINTAIN GREAT SYSTEMS, CHANGING THE WORLD ONE
-              SYSTEM AT A TIME
-            </p>
-            <div class="skills-images">
-              <figure class="figure" style="width: 50px">
-                <img
-                  src="./images/JavaCupLogo800x800.png"
-                  class="figure-img img-fluid rounded"
-                  alt="java"
-                />
-                <figcaption class="figure-caption text-center text-primary">
-                  Java
-                </figcaption>
-              </figure>
-              <figure class="figure" style="width: 50px">
-                <img
-                  src="./images/Unofficial_JavaScript_logo_2.svg.png"
-                  class="figure-img img-fluid rounded"
-                  alt="java"
-                />
-                <figcaption class="figure-caption text-center text-primary">
-                  JavaScript
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-6 col-12">
-            <p class="d-flex gap-2">
-              <span class="text-warning fs-4">⚡</span>
-              <span>I deliver fast programs, fast.</span>
-            </p>
-            <p class="d-flex gap-2">
-              <span class="text-warning fs-4">⚡</span>
-              <span>I understand the client's business domain and needs.</span>
-            </p>
-            <p class="d-flex gap-2">
-              <span class="text-warning fs-4">⚡</span>
-              <span
-                >I'm a great communicator and clients tend to love working with
-                me!</span
-              >
-            </p>
-          </div>
-          <div class="col-md-6 col-12">
-            <p class="d-flex gap-2">
-              <span class="text-warning fs-4">⚡</span>
-              <span>I'm experienced in Digital Transformation.</span>
-            </p>
-            <p class="d-flex gap-2">
-              <span class="text-warning fs-4">⚡</span>
-              <span
-                >I'm experienced in creating analytics and reporting services.
-              </span>
-            </p>
-            <p class="d-flex gap-2">
-              <span class="text-warning fs-4">⚡</span>
-              <span
-                >I'm experienced in integrating third party APIs/Payment
-                Services.</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====================== Proficiency  ============================ -->
+    </div>
+    <!-- page content -->
+    <div class="websiteContent">
+      <!-- ====================== HEADER ============================ -->
 
-    <section class="proficiency" id="proficiency">
-      <div class="container">
-        <h2 class="sectionHeader">Proficiency</h2>
-        <div class="proficiencycontent">
-          <div class="skillProgress mb-4">
-            <h6>Backend</h6>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
-                style="width: 90%"
-              ></div>
+      <header class="my-3">
+        <div class="container">
+          <div
+            class="headercontent d-flex justify-content-between align-items-center border-bottom"
+          >
+            <div class="logo">
+              <a href="./index.html" class="text-decoration-none">
+                &lt; AMR YADEM &gt;</a
+              >
             </div>
-          </div>
-          <div class="skillProgress mb-4">
-            <h6>Frontend</h6>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
-                style="width: 60%"
-              ></div>
-            </div>
-          </div>
-          <div class="skillProgress mb-4">
-            <h6>Backend</h6>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
-                style="width: 90%"
-              ></div>
-            </div>
-          </div>
-          <div class="skillProgress mb-4">
-            <h6>Machine and Deep Learning</h6>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
-                style="width: 60%"
-              ></div>
-            </div>
-          </div>
-          <div class="skillProgress mb-4">
-            <h6>Data Engineering</h6>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
-                style="width: 90%"
-              ></div>
-            </div>
-          </div>
-          <div class="skillProgress mb-4">
-            <h6>Data Analysis</h6>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
-                style="width: 60%"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====================== Education  ============================ -->
-    <section class="education" id="education">
-      <div class="container">
-        <h2 class="sectionHeader">Education</h2>
-        <div class="row">
-          <div class="col-lg-4 col-12 text-center">
-            <img
-              src="./images/LogoUni.png"
-              alt="Alex university"
-              style="width: 150px"
-            />
-          </div>
-          <div class="col-lg-8 col-12 mt-l">
-            <h3>Alexanderia University</h3>
-            <h6>Bachelor of Science in Computer Science</h6>
-            <p>2014 - 2018</p>
-            <p>
-              In my Graduation Project I chose to work in medical imaging, where
-              I utilized deep learning to detect Breast Cancer.
-            </p>
-            <ul>
-              <li>Algorithms</li>
-              <li>Database</li>
-              <li>Distributed Systems</li>
-              <li>Software Engineering</li>
-              <li>Neural Networks</li>
+            <ul class="nav justify-content-end d-none d-md-flex nav-white-mode">
+              <li class="nav-item nav--links" id="homeIcon">
+                <a class="nav-link text-light active--link" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item nav--links" id="skillIcon">
+                <a class="nav-link text-light" href="#skill">Skill</a>
+              </li>
+              <li class="nav-item nav--links" id="experienceIcon">
+                <a class="nav-link text-light" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item nav--links" id="educationIcon">
+                <a class="nav-link text-light" href="#education">Education</a>
+              </li>
+              <li class="nav-item nav--links" id="contactsIcon">
+                <a class="nav-link text-light" href="#contacts">Contacts</a>
+              </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====================== Experiences  ============================ -->
-    <section class="experiences">
-      <div class="container">
-        <h2 class="sectionHeader">Experiences</h2>
-        <div class="row justify-content-center">
-          <!-- first experience -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <div
-                class="bg-success bg-gradient position-relative d-flex justify-content-center align-items-center"
-                style="height: 200px"
-              >
-                <h3>
-                  <a
-                    href="https://istegy.net/"
-                    class="text-decoration-none text-light"
-                    >Info Tech</a
-                  >
-                </h3>
-                <div
-                  class="position-absolute top-100 start-50 translate-middle bg-light p-2 rounded-circle d-flex justify-content-center align-items-center"
-                >
-                  <i
-                    class="fa-solid fa-magnet text-success text-gradient fs-1"
-                  ></i>
-                </div>
-              </div>
-              <div
-                class="card-body pt-5"
-                style="background-color: var(--dark-background-card)"
-              >
-                <h3 class="card-title text-center">Full Stack Developer</h3>
-                <h6 class="text-center">Jan 2022 – Nov 2022</h6>
-                <p class="fw-bold">
-                  As part of Clearance team, I led work on assisting customer
-                  feature requests and development participating in the entire
-                  software life cycle, including feature refinement
-                </p>
-                <ul style="line-height: 2.5">
-                  <li>
-                    Design a top management dashboard and aggregate data from
-                    different sources.
-                  </li>
-                  <li>
-                    Developed company-wide solution making insert operation
-                    idempotent.
-                  </li>
-                  <li>
-                    Developed a new email service and integrate it with the
-                    customer exchange server.
-                  </li>
-                  <li>Ingrate Fiata eFBL with our platform.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- second experience -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <div
-                class="bg-primary bg-gradient position-relative d-flex justify-content-center align-items-center"
-                style="height: 200px"
-              >
-                <h3>
-                  <a
-                    href="https://istegy.net/"
-                    class="text-decoration-none text-light"
-                    >Info Tech</a
-                  >
-                </h3>
-                <div
-                  class="position-absolute top-100 start-50 translate-middle bg-light p-2 rounded-circle d-flex justify-content-center align-items-center"
-                >
-                  <i
-                    class="fa-brands fa-cloudflare text-primary text-gradient fs-1"
-                  ></i>
-                </div>
-              </div>
-              <div
-                class="card-body pt-5"
-                style="background-color: var(--dark-background-card)"
-              >
-                <h3 class="card-title text-center">Full Stack Developer</h3>
-                <h6 class="text-center">Jan 2022 – Nov 2022</h6>
-                <p class="fw-bold">
-                  As part of Clearance team, I led work on assisting customer
-                  feature requests and development participating in the entire
-                  software life cycle, including feature refinement
-                </p>
-                <ul style="line-height: 2.5">
-                  <li>
-                    Design a top management dashboard and aggregate data from
-                    different sources.
-                  </li>
-                  <li>
-                    Developed company-wide solution making insert operation
-                    idempotent.
-                  </li>
-                  <li>
-                    Developed a new email service and integrate it with the
-                    customer exchange server.
-                  </li>
-                  <li>Ingrate Fiata eFBL with our platform.</li>
-                </ul>
-              </div>
+            <!-- nav bar in small or less -->
+            <ul
+              style="
+                top: 90%;
+                left: 50%;
+                transform: translatex(-50%);
+                width: 100%;
+              "
+              class="nav d-md-none z-3 position-fixed nav-white-mode d-flex justify-content-center"
+            >
+              <li class="nav-item nav--links">
+                <a class="nav-link text-light" href="./index.html"
+                  ><i class="fa-solid fa-house"></i
+                ></a>
+              </li>
+              <li class="nav-item nav--links">
+                <a class="nav-link text-light" href="#skill"
+                  ><i class="fa-brands fa-think-peaks"></i
+                ></a>
+              </li>
+              <li class="nav-item nav--links">
+                <a class="nav-link text-light" href="#experience"
+                  ><i class="fa-solid fa-user-secret"></i
+                ></a>
+              </li>
+              <li class="nav-item nav--links">
+                <a class="nav-link text-light" href="#education"
+                  ><i class="fa-brands fa-ideal"></i
+                ></a>
+              </li>
+              <li class="nav-item nav--links">
+                <a class="nav-link text-light" href="#contacts"
+                  ><i class="fa-solid fa-address-card"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="mode">
+              <i
+                class="fa-solid fa-moon swapIcon"
+                onclick="hanleDarkAndWhite()"
+              ></i>
             </div>
           </div>
         </div>
+      </header>
+      <!-- ====================== landing page ============================ -->
+      <section class="landingPage" id="home">
+        <div class="container">
+          <div class="row mt-5 pt-5">
+            <article class="left col-lg-4 col-12">
+              <h1>Hi all, I'm Amr</h1>
+
+              <div class="my-3 lh-lg mt-5">
+                <p class="d-flex gap-2">
+                  <span class="text-warning fs-4"
+                    ><i class="fa-solid fa-fire"></i
+                  ></span>
+                  <span>I deliver fast programs, fast.</span>
+                </p>
+                <p class="d-flex gap-2">
+                  <span class="text-warning fs-4"
+                    ><i class="fa-solid fa-fire"></i
+                  ></span>
+                  <span
+                    >I understand the client's business domain and needs.</span
+                  >
+                </p>
+                <p class="d-flex gap-2">
+                  <span class="text-warning fs-4"
+                    ><i class="fa-solid fa-fire"></i
+                  ></span>
+                  <span
+                    >I'm a great communicator and clients tend to love working
+                    with me!</span
+                  >
+                </p>
+                <p class="d-flex gap-2">
+                  <span class="text-warning fs-4"
+                    ><i class="fa-solid fa-fire"></i
+                  ></span>
+                  <span>I'm experienced in Digital Transformation.</span>
+                </p>
+                <p class="d-flex gap-2">
+                  <span class="text-warning fs-4"
+                    ><i class="fa-solid fa-fire"></i
+                  ></span>
+                  <span
+                    >I'm experienced in creating analytics and reporting
+                    services.
+                  </span>
+                </p>
+                <p class="d-flex gap-2">
+                  <span class="text-warning fs-4"
+                    ><i class="fa-solid fa-fire"></i
+                  ></span>
+                  <span
+                    >I'm experienced in integrating third party APIs/Payment
+                    Services.</span
+                  >
+                </p>
+              </div>
+              <ul
+                class="sociallinks list-unstyled d-flex gap-3 justify-content-center mt-5"
+              >
+                <li class="social-link">
+                  <a href="https://github.com/AmrYadam" class="github"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li class="social-link">
+                  <a href="mailto:yadamamr@gmail.com" class="gmail"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="social-link">
+                  <a
+                    href="https://www.linkedin.com/in/amryadam/"
+                    class="linkedin"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+              <div
+                class="buttons d-flex flex-wrap justify-content-center gap-3 mt-5"
+              >
+                <a href="#"
+                  ><button type="button" class="btn btn-outline-primary">
+                    CONTACT ME
+                  </button>
+                </a>
+                <a href="#"
+                  ><button type="button" class="btn btn-outline-primary">
+                    SEE MY RESUME
+                  </button>
+                </a>
+              </div>
+            </article>
+            <article class="left col-lg-8 col-12">
+              <lottie-player
+                src="./lottoie_files/123752-start-up-meeting.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></lottie-player>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ====================== what i do   ============================ -->
+      <section class="Whatido" id="skill">
+        <div class="container">
+          <h2 class="sectionHeader">What I do</h2>
+          <div class="row">
+            <!-- lotti file -->
+            <div class="col-md-6 col-12 left">
+              <lottie-player
+                src="./lottoie_files/130724-loading-webpage.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <!-- right corner -->
+            <div class="col-md-6 col-12 right">
+              <p>
+                I SCRATCH AND MAINTAIN GREAT SYSTEMS, CHANGING THE WORLD ONE
+                SYSTEM AT A TIME
+              </p>
+              <div class="skills-images d-flex gap-4">
+                <figure class="figure" style="opacity: 0.5">
+                  <i class="fa-brands fa-java" style="font-size: 50px"></i>
+                  <figcaption
+                    class="figure-caption text-light text-center fs-6"
+                  >
+                    Java
+                  </figcaption>
+                </figure>
+                <figure class="figure" style="opacity: 0.5">
+                  <i class="fa-brands fa-square-js" style="font-size: 50px"></i>
+                  <figcaption
+                    class="figure-caption text-light text-center fs-6"
+                  >
+                    Javascript
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 col-12">
+              <p class="d-flex gap-2">
+                <span class="text-warning fs-4">⚡</span>
+                <span>I deliver fast programs, fast.</span>
+              </p>
+              <p class="d-flex gap-2">
+                <span class="text-warning fs-4">⚡</span>
+                <span
+                  >I understand the client's business domain and needs.</span
+                >
+              </p>
+              <p class="d-flex gap-2">
+                <span class="text-warning fs-4">⚡</span>
+                <span
+                  >I'm a great communicator and clients tend to love working
+                  with me!</span
+                >
+              </p>
+            </div>
+            <div class="col-md-6 col-12">
+              <p class="d-flex gap-2">
+                <span class="text-warning fs-4">⚡</span>
+                <span>I'm experienced in Digital Transformation.</span>
+              </p>
+              <p class="d-flex gap-2">
+                <span class="text-warning fs-4">⚡</span>
+                <span
+                  >I'm experienced in creating analytics and reporting services.
+                </span>
+              </p>
+              <p class="d-flex gap-2">
+                <span class="text-warning fs-4">⚡</span>
+                <span
+                  >I'm experienced in integrating third party APIs/Payment
+                  Services.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====================== Proficiency  ============================ -->
+
+      <div class="proficiency" id="proficiency">
+        <div class="container">
+          <h2 class="sectionHeader">Proficiency</h2>
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 left">
+              <lottie-player
+                src="./lottoie_files/124587-butterfly-on-mechanical-robot-finger-hand.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div class="proficiencycontent col-12 col-lg-6 right">
+              <div class="skillProgress mb-4">
+                <h6>Backend</h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skillProgress mb-4">
+                <h6>Frontend</h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
+                    style="width: 60%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skillProgress mb-4">
+                <h6>Backend</h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skillProgress mb-4">
+                <h6>Machine and Deep Learning</h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
+                    style="width: 60%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skillProgress mb-4">
+                <h6>Data Engineering</h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skillProgress mb-4">
+                <h6>Data Analysis</h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-gradient"
+                    style="width: 60%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- ====================== Contact  ============================ -->
-    <section class="Contact" id="contact">
-      <div class="container">
-        <h2 class="sectionHeader">Contact Me</h2>
-        <p class="text-center">
-          WANT TO ASK SOMETHING? MY INBOX IS OPEN FOR ALL.
-        </p>
-        <a
-          href="tel:+20 101 066 0925 "
-          class="d-block text-center text-decoration-none text-light"
-        >
-          +20 101 066 0925</a
-        >
-        <a
-          href="mailto:yadamamr@gmail.com"
-          class="d-block text-decoration-none text-center text-light"
-          >yadamamr@gmail.com</a
-        >
-        <ul
-          class="sociallinks list-unstyled d-flex gap-3 justify-content-center mt-5"
-        >
-          <li class="social-link">
-            <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li class="social-link">
-            <a href="#" class="gmail"><i class="fa-solid fa-envelope"></i></a>
-          </li>
-          <li class="social-link">
-            <a href="#" class="linkedin"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
+      <!-- ====================== Education  ============================ -->
+      <section class="education" id="education">
+        <div class="container">
+          <h2 class="sectionHeader">Education</h2>
+          <div class="row">
+            <div class="col-lg-4 col-12 text-center">
+              <img
+                src="./images/LogoUni.png"
+                alt="Alex university"
+                style="width: 150px"
+              />
+            </div>
+            <div class="col-lg-8 col-12 mt-l">
+              <h3>Alexanderia University</h3>
+              <h6>Bachelor of Science in Computer Science</h6>
+              <p>2014 - 2018</p>
+              <p>
+                In my Graduation Project I chose to work in medical imaging,
+                where I utilized deep learning to detect Breast Cancer.
+              </p>
+              <ul>
+                <li>Algorithms</li>
+                <li>Database</li>
+                <li>Distributed Systems</li>
+                <li>Software Engineering</li>
+                <li>Neural Networks</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="typing col-12 col-lg-6">
+              <lottie-player
+                src="./lottoie_files/132124-hands-typing-on-keyboard.json"
+                background="transparent"
+                speed=".8"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====================== Experiences  ============================ -->
+      <section class="experience" id="experience">
+        <div class="container">
+          <h2 class="sectionHeader">Experiences</h2>
+          <div class="row gap-3 justify-content-center">
+            <!-- first experience -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div
+                  class="bg-success bg-gradient position-relative d-flex justify-content-center align-items-center"
+                  style="height: 200px"
+                >
+                  <h3>
+                    <a
+                      href="https://istegy.net/"
+                      class="text-decoration-none text-light"
+                      >Info Tech</a
+                    >
+                  </h3>
+                  <div
+                    class="position-absolute top-100 start-50 translate-middle bg-light p-2 rounded-circle d-flex justify-content-center align-items-center"
+                  >
+                    <i
+                      class="fa-solid fa-magnet text-success text-gradient fs-1"
+                    ></i>
+                  </div>
+                </div>
+                <div
+                  class="card-body card-bodywhitemode pt-5"
+                  style="background-color: var(--dark-background-card)"
+                >
+                  <h3 class="card-title text-center">Full Stack Developer</h3>
+                  <h6 class="text-center">Jan 2022 – Nov 2022</h6>
+                  <p class="fw-bold">
+                    As part of Clearance team, I led work on assisting customer
+                    feature requests and development participating in the entire
+                    software life cycle, including feature refinement
+                  </p>
+                  <ul style="line-height: 2.5">
+                    <li>
+                      Design a top management dashboard and aggregate data from
+                      different sources.
+                    </li>
+                    <li>
+                      Developed company-wide solution making insert operation
+                      idempotent.
+                    </li>
+                    <li>
+                      Developed a new email service and integrate it with the
+                      customer exchange server.
+                    </li>
+                    <li>Ingrate Fiata eFBL with our platform.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- second experience -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div
+                  class="bg-primary bg-gradient position-relative d-flex justify-content-center align-items-center"
+                  style="height: 200px"
+                >
+                  <h3>
+                    <a
+                      href="https://istegy.net/"
+                      class="text-decoration-none text-light"
+                      >Info Tech</a
+                    >
+                  </h3>
+                  <div
+                    class="position-absolute top-100 start-50 translate-middle bg-light p-2 rounded-circle d-flex justify-content-center align-items-center"
+                  >
+                    <i
+                      class="fa-brands fa-cloudflare text-primary text-gradient fs-1"
+                    ></i>
+                  </div>
+                </div>
+                <div
+                  class="card-body card-bodywhitemode pt-5"
+                  style="background-color: var(--dark-background-card)"
+                >
+                  <h3 class="card-title text-center">Full Stack Developer</h3>
+                  <h6 class="text-center">Jan 2022 – Nov 2022</h6>
+                  <p class="fw-bold">
+                    As part of Clearance team, I led work on assisting customer
+                    feature requests and development participating in the entire
+                    software life cycle, including feature refinement
+                  </p>
+                  <ul style="line-height: 2.5">
+                    <li>
+                      Design a top management dashboard and aggregate data from
+                      different sources.
+                    </li>
+                    <li>
+                      Developed company-wide solution making insert operation
+                      idempotent.
+                    </li>
+                    <li>
+                      Developed a new email service and integrate it with the
+                      customer exchange server.
+                    </li>
+                    <li>Ingrate Fiata eFBL with our platform.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====================== Contact  ============================ -->
+      <div class="Contact" id="contacts">
+        <div class="container">
+          <h2 class="sectionHeader">Contact Me</h2>
+          <p class="text-center">
+            WANT TO ASK SOMETHING? MY INBOX IS OPEN FOR ALL.
+          </p>
+          <a
+            href="tel:+20 101 066 0925 "
+            class="d-block text-center text-decoration-none text-light"
+          >
+            +20 101 066 0925</a
+          >
+          <a
+            href="mailto:yadamamr@gmail.com"
+            class="d-block text-decoration-none text-center text-light"
+            >yadamamr@gmail.com</a
+          >
+          <div class="row justify-content-center align-items-center">
+            <div class="typing col-6 col-md-6 col-lg-4">
+              <lottie-player
+                src="./lottoie_files/110986-contact-us.json"
+                background="transparent"
+                speed=".8"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div class="col-12 col-md-6">
+              <ul
+                class="sociallinks list-unstyled d-flex gap-3 justify-content-center mt-5"
+              >
+                <li class="social-link">
+                  <a href="https://github.com/AmrYadam" class="github"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li class="social-link">
+                  <a href="mailto:yadamamr@gmail.com" class="gmail"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="social-link">
+                  <a
+                    href="https://www.linkedin.com/in/amryadam/"
+                    class="linkedin"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <!-- ====================== footer  ============================ -->
+      <footer class="bg-light mt-5 p-3">
+        <div class="container">
+          <p class="text-dark text-center">
+            © 2023 AMR_YADEM® ALL RIGHTS IS PRESERVED
+          </p>
+        </div>
+      </footer>
+      <!-- up button -->
+      <div
+        onclick="handleUp()"
+        class="up position-fixed bg-primary p-2 d-flex justify-content-center align-items-center rounded bg-success bg-opacity-75"
+        style="top: 80%; left: 90%; cursor: pointer"
+      >
+        <i class="fa-solid fa-hand-back-fist"></i>
+      </div>
+    </div>
     <!-- bootstrab js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
